@@ -3,15 +3,15 @@ orbs:
   node: circleci/node@5.0.3
 jobs:
   install-and-test:
-  executor:
-    name: node/default
-    tag: '16.17'
-  steps:
-    - checkout 
-    - node/install-packages
-    - run:
-        command: npm run test
-        name: Run YARN tests
+    executor:
+      name: node/default
+      tag: '16.17'
+    steps:
+      - checkout 
+      - node/install-packages
+      - run:
+          command: npm run test
+          name: Run YARN tests
 workflows:
   test_my_app:
     jobs: 

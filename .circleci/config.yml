@@ -10,8 +10,8 @@ jobs:
     - checkout 
     - node/install-packages
     - run:
-      command: npm run test
-      name: Run YARN tests
+        command: npm run test
+        name: Run YARN tests
 workflows:
   test_my_app:
     jobs: 
